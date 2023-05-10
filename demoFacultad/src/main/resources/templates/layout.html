@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:fragment="head">
+	<title>Proyecto Facultad Spring Boot</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/main.css" th:href="@{/css/main.css}">
+
+	
+</head>
+
+<body>
+	<!-- Navegación -->
+	<header th:fragment="header">
+		<div class="container">
+			<nav class="navbar" role="navigation" aria-label="main navigation">
+				<div class="navbar-start" >
+					<a class="navbar-item" href="https://www.uacam.mx">
+						Universidad Autonoma de Campeche
+	                </a>
+
+					<a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false"
+						data-target="navbarBasicExample">
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+						<span aria-hidden="true"></span>
+					</a>
+				</div>
+
+				<div id="navbarBasicExample" class="navbar-menu">
+					<div class="navbar-start">
+						<a class="navbar-item" href="/inicio">
+							Inicio
+						</a>
+
+						<a class="navbar-item" href="/oferta">
+						Oferta Educativa
+						</a>
+
+						<div class="navbar-item has-dropdown is-hoverable ">
+							<a class="navbar-link navbar-item">
+								Ver más
+							</a>
+
+							<div class="navbar-dropdown">
+								<a class="navbar-item" href="/about">
+									Sobre nosotros
+								</a>
+								<a class="navbar-item" href="/contact">
+									Contactanos
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+		<br>
+		<br>
+	</header>
+	
+	<div class="container">
+		
+	</div>
+	<footer th:fragment="footer" class="card-footer">
+		
+		<p class="card-footer-item">
+			<br>
+		    <br>
+				<span>
+					Ver en <a href="">Twitter</a>
+				</span>
+			</p>
+			<p class="card-footer-item">
+				<span>
+					Compartir en <a href="#">Facebook</a>
+				</span>
+			</p>
+			<p class="card-footer-item">
+				<span>
+					Contactanos en <a href="#">Whatsapp</a>
+				</span>
+			</p>
+		<div class="container">
+			
+			<p>(c) Universidad Autónoma de Campeche Spring Boot 2023</p>
+		</div>
+	</footer>
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head th:replace="~{layout :: head}">
+</head>
+
+<body><!-- Navegación -->
+	<header th:replace="~{layout :: header}"> </header>
+	<div class="container">
+		<div class="card">
+			<div class="card-content">
+				<p class="title">
+					“Oferta Educativa”
+				</p>
+				<p class="subtitle">
+					Universidad Autonoma de Campeche
+				</p>
+			</div>
+
+		</div>
+		<br>
+		<br>
+		<div class="card">
+			<div class="card-footer">
+				<a href="#" class="card-footer-item">Guardar</a>
+				<a href="#" class="card-footer-item">Eliminar</a>
+				<a href="#" class="card-footer-item">Editar</a>
+			</div>
+		</div>
+		<br>
+		<article class="panel is-info">
+			<p class="panel-heading">
+				Info
+			</p>
+			<p class="panel-tabs">
+				<a class="is-active">All</a>
+				<a>Public</a>
+				<a>Private</a>
+				<a>Sources</a>
+				<a>Forks</a>
+			</p>
+			<div class="panel-block">
+				<p class="control has-icons-left">
+					<input class="input is-info" type="text" placeholder="Search">
+					<span class="icon is-left">
+						<i class="fas fa-search" aria-hidden="true"></i>
+					</span>
+				</p>
+			</div>
+			<a class="panel-block is-active">
+				<span class="panel-icon">
+					<i class="fas fa-book" aria-hidden="true"></i>
+				</span>
+				bulma
+			</a>
+			<a class="panel-block">
+				<span class="panel-icon">
+					<i class="fas fa-book" aria-hidden="true"></i>
+				</span>
+				marksheet
+			</a>
+			<a class="panel-block">
+				<span class="panel-icon">
+					<i class="fas fa-book" aria-hidden="true"></i>
+				</span>
+				minireset.css
+			</a>
+			<a class="panel-block">
+				<span class="panel-icon">
+					<i class="fas fa-book" aria-hidden="true"></i>
+				</span>
+				jgthms.github.io
+			</a>
+		</article>
+	</div>
+	</div>
+	<br>
+	<br>
+	<footer th:replace="~{layout :: footer}"></footer>
+</body>
+
+</html>
